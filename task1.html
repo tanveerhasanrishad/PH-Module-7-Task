@@ -4,6 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      section {
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+      }
+      .layout-1 {
+        background-color: darkgrey;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        width: 30vw;
+        height: 100vh;
+        border-radius: 10px;
+      }
+      .layout-2 {
+        background-color: cornsilk;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        width: 70vw;
+        height: 100vh;
+        border-radius: 10px;
+      }
+      @media screen and (max-width: 574px) {
+        section {
+          flex-direction: column;
+          padding: 10px;
+        }
+        .layout-1 {
+          width: 100vw;
+          height: 25vh;
+        }
+        .layout-2 {
+          width: 100vw;
+          height: 75vh;
+        }
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <section>
+      <div class="layout-1">
+        <p>Left</p>
+      </div>
+      <div class="layout-2">
+        <p>Right</p>
+      </div>
+    </section>
+  </body>
 </html>
