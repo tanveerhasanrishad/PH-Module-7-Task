@@ -4,6 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 5</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      img {
+        width: 50%;
+        height: auto;
+      }
+      .container {
+        display: flex;
+      }
+      .content {
+        padding: 30px;
+      }
+      @media screen and (max-width: 574px) {
+        .container1 {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        img {
+          width: 100%;
+        }
+        .container2 {
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <section>
+      <div class="container container1">
+        <img src="images/food1.avif" alt="" />
+        <div class="content">
+          <h3>This is heading</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
+            nisi quam? Quo, consequuntur nostrum dolor facilis quis, quos
+            tenetur autem quod itaque, cumque laboriosam quisquam et
+            consectetur. Suscipit, natus molestiae?Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Odit incidunt aliquam mollitia velit
+            blanditiis accusamus illo ipsam ratione facilis similique est, ullam
+            ut, dolores amet esse, eum repudiandae voluptate sunt itaque! Magni
+            dolorum mollitia temporibus voluptate aut quaerat esse dolorem,
+            voluptatem cumque necessitatibus rem cum inventore nobis enim vero
+            neque.
+          </p>
+        </div>
+      </div>
+      <div class="container container2">
+        <div class="content">
+          <h3>This is heading</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
+            nisi quam? Quo, consequuntur nostrum dolor facilis quis, quos
+            tenetur autem quod itaque, cumque laboriosam quisquam et
+            consectetur. Suscipit, natus molestiae?Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. At magni eligendi ad repellendus quas
+            quibusdam perspiciatis, veritatis, eveniet sunt obcaecati eum iste,
+            pariatur fugit aspernatur accusantium qui! Quia, natus ut aliquid
+            hic repellendus expedita numquam? Fugiat, nulla perspiciatis harum
+            quaerat incidunt ex aperiam nisi, fuga vero, accusamus dolorum nemo
+            ducimus!
+          </p>
+        </div>
+        <img src="images/food2.avif" alt="" />
+      </div>
+    </section>
+  </body>
 </html>
